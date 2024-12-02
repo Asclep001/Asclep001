@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding-bottom: 20px;
+}
+
+.card {
+    width: 600px; 
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.left-section {
+    text-align: center;
+}
+
+.image-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: #b0b0b0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #808080;
+}
+
+.student-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.right-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.form-borrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-borrow label {
+    width: 150px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+.form-borrow input{
+    width: 220px; 
+    padding: 12px; 
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+.borrow-buttons {
+    grid-column: span 2; /* Ensure buttons span the full width */
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 20px;
+}
+
+.cancel-btn, .create-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cancel-btn:hover, .create-btn:hover {
+    transform: scale(1.05);
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.create-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.borrow-form-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f6f7fb;
+    border-radius: 8px;
+}
+
+.borrow-form-left {
+    flex: 0 0 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-borrow {
+    margin-bottom: 20px;
+}
+
+.form-borrow label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+ }
+
+ .custom-checkbox {
+    width: 24px;
+    height: 24px;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.custom-checkbox::after {
+    content: " ";
+    position: absolute;
+    top: 2px;
+    left: 7px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+    opacity: 1;
+} 

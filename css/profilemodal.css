@@ -1,0 +1,117 @@
+.admincontainer{
+    display: flex;
+    align-items: grid;
+}
+.profile-container {
+
+    background-color: #ffffff; /* Changed to white for better contrast */
+    border-radius: 10px; /* Slightly increased border radius */
+    padding: 30px; /* Increased padding for more space */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    max-width: 450px; /* Increased max width */
+    gap: 10px;
+}
+
+.addstaff{
+   margin-left: 20px;
+}
+
+.addstaff button{
+   margin-left: 20px;
+   background-color: blue;
+   color: white;
+   padding: 12px 18px; /* Increased padding */
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: bold;
+   transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+}
+
+.profile-header{
+    display: flex;
+    flex-direction: grid;
+    gap: 10px;
+}
+
+.profile-info {
+    margin-bottom: 25px; /* Increased margin */
+    font-family: 'Arial', sans-serif; /* Changed font */
+}
+
+.profile-image {
+    border-radius: 100%;
+    border: 3px solid #007bff; /* Increased border width */
+}
+
+.form-group {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 20px; /* Increased margin */
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px; /* Increased margin */
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Increased border radius */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Added focus shadow */
+}
+
+.btn {
+    padding: 12px 18px; /* Increased padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Added hover scale effect */
+}
+
+.btn-edit {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #218838;
+}
+
+.btn-confirm {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-confirm:hover {
+    background-color: #0056b3;
+}
+
+.btn-cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

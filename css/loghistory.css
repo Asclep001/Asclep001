@@ -1,0 +1,46 @@
+.student-logs {
+  grid-row: 4/5;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+.student-logs th,
+.student-logs td {
+  padding: 14px 16px;
+  border: 1px solid #eee;
+}
+
+.student-logs th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+.student-logs tr:hover {
+  background-color: var(--primary-color-light);
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.student-logs tr td {
+  color: var(--text-color);
+  font-style: normal;
+  line-height: 1.4;
+}
+
+.student-logs tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+
+

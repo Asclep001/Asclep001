@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dcdde1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.input-group .icon:hover {
+    color: #333;
+}
+
+.input-group .icon.icon-lock {
+    color: #444;
+}
+
+.input-group .toggle-password {
+    color: #444;
+}
+
+.input-group input:focus ~ .icon,
+.input-group input:focus ~ .toggle-password {
+    color: #007bff;
+}
+
+.toggle-password {
+    display: none;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.remember-me label {
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+}
+
+header {
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
+    width: 100%; /* Makes the header full width */
+    background-color: #ffffff; /* Background color for visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.navbar {
+    display: flex; /* Aligns items in a row */
+    justify-content: space-between; /* Space between logo and button */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding for spacing */
+}

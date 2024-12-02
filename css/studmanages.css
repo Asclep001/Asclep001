@@ -1,0 +1,136 @@
+:root {
+  /* ========== Colors ========== */
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+
+  /* ========== Transition ========== */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+.student-info {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.student-info th,
+.student-info td {
+    padding: 14px 16px;
+    border: 2px solid #ddd;
+    text-align: left;
+}
+
+.student-info th {
+    background-color: #f4f4f4;
+    color: #333333;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.student-info tr:hover {
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.student-info tr td {
+    color: var(--text-color);
+    font-style: normal;
+}
+
+.student-info tr td img {
+    width: 100px;
+    height: 100px;
+}
+
+.stud-list {
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stud-list #add-stud-info {
+    font-size: 20px;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.stud-list .import-stud {
+    float: right;
+    font-size: 20px;
+}
+
+.stud-search-engine {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.stud-search-engine label {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.search-container input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.stud-list #add-stud-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stud-list #add-stud-info i {
+    font-size: 15px;
+}
+

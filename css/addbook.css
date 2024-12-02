@@ -1,0 +1,102 @@
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding-bottom: 20px;
+}
+
+.card {
+    width: 600px; 
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.left-section {
+    text-align: center;
+}
+
+.image-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: #b0b0b0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #808080;
+}
+
+.student-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.right-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.form-book {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-book label {
+    width: 150px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.form-book input, .form-book select {
+    width: calc(100% - 160px); /* Ensure inputs fill available space */
+    padding: 10px; /* Increased padding for better touch targets */
+    font-size: 14px;
+    border: 1px solid #ccc; /* Added border for better visibility */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.book-buttons {
+    grid-column: span 2; /* Ensure buttons span the full width */
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 20px;
+}
+
+.cancel-btn, .create-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+.cancel-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.create-btn:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.create-btn {
+    background-color: #2196F3;
+    color: white;
+}

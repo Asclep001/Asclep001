@@ -1,0 +1,58 @@
+/* mainfolder/css/returnhstry.css */
+.return-info {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9; /* Added background color */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* To apply border-radius */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.return-info th, .return-info td {
+  padding: 15px; /* Increased padding */
+  border: 1px solid #ddd;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Changed font */
+  font-size: 14px; /* Adjusted font size */
+}
+
+.return-info th {
+  background-color: #6a5acd; /* Changed header background color to a purple shade */
+  color: white; /* Changed header text color */
+  font-weight: bold; /* Bold header text */
+}
+
+.return-info tr {
+  border-right: 10px solid #ddd;
+}
+
+.return-info tr:hover {
+  background-color: #e0f7fa; /* Enhanced hover effect */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.return-info tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternating row color */
+}
+
+/* Style for action buttons */
+.return-info .action-button {
+  background-color: #007BFF; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 15px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded button corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+  font-size: 14px; /* Adjusted button font size */
+}
+
+.return-info .action-button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+/* Additional styles for better UI */
+.return-info .action-button {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow to buttons */
+} 
